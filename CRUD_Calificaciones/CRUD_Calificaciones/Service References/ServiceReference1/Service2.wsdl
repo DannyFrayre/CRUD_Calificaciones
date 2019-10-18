@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service2" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2844/Service2.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2844/Service2.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2844/Service2.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService2_crear_InputMessage">
+    <wsdl:part name="parameters" element="tns:crear" />
+  </wsdl:message>
+  <wsdl:message name="IService2_crear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:crearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_modificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificar" />
+  </wsdl:message>
+  <wsdl:message name="IService2_modificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IService2_eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_leer_InputMessage">
+    <wsdl:part name="parameters" element="tns:leer" />
+  </wsdl:message>
+  <wsdl:message name="IService2_leer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:leerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscar" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService2">
+    <wsdl:operation name="crear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/crear" message="tns:IService2_crear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/crearResponse" message="tns:IService2_crear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/modificar" message="tns:IService2_modificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/modificarResponse" message="tns:IService2_modificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/eliminar" message="tns:IService2_eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/eliminarResponse" message="tns:IService2_eliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="leer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/leer" message="tns:IService2_leer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/leerResponse" message="tns:IService2_leer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/buscar" message="tns:IService2_buscar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/buscarResponse" message="tns:IService2_buscar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService2" type="tns:IService2">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="crear">
+      <soap:operation soapAction="http://tempuri.org/IService2/crear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificar">
+      <soap:operation soapAction="http://tempuri.org/IService2/modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminar">
+      <soap:operation soapAction="http://tempuri.org/IService2/eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="leer">
+      <soap:operation soapAction="http://tempuri.org/IService2/leer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar">
+      <soap:operation soapAction="http://tempuri.org/IService2/buscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service2">
+    <wsdl:port name="BasicHttpBinding_IService2" binding="tns:BasicHttpBinding_IService2">
+      <soap:address location="http://localhost:2844/Service2.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

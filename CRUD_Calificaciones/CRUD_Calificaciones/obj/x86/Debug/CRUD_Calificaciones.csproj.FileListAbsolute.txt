@@ -1,0 +1,8 @@
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\bin\Debug\CRUD_Calificaciones.exe.config
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\bin\Debug\CRUD_Calificaciones.exe
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\bin\Debug\CRUD_Calificaciones.pdb
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\obj\x86\Debug\CRUD_Calificaciones.Form1.resources
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\obj\x86\Debug\CRUD_Calificaciones.Properties.Resources.resources
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\obj\x86\Debug\CRUD_Calificaciones.csproj.GenerateResource.Cache
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\obj\x86\Debug\CRUD_Calificaciones.exe
+C:\Users\ASUS\Documents\CRUD_Calificaciones\CRUD_Calificaciones\obj\x86\Debug\CRUD_Calificaciones.pdb
